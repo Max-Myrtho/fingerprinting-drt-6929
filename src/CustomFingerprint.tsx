@@ -1,3 +1,7 @@
+///////////////////
+//Not used
+///////////////////
+
 import { useEffect, useState } from "react";
 
 const getFingerprint = (): string => {
@@ -35,11 +39,11 @@ const CustomFingerprint = () => {
         color: "black"
     }}>
       <h4>Votre résolution actuelle: <u>{resolution}</u></h4>
-      <b style={{color: 'blue'}}>Votre fingerprint pour ce site</b>
+      <b>Sur ce site, vous êtes identifié par ce fingerprint:</b>
       <br/>
       {fingerprint ? <span className="bg-black text-white rounded-md px-2 p-0.5">{fingerprint}</span> : <span>Calcul en cours...</span>}
     <hr className="mt-4"/>
-    <p className="italic">Ce fingerprint a été déduit de votre résolution actuelle et de votre fuseau horaire uniquement.</p>
+    <p className="italic">Ce fingerprint a été calculé en fonction de votre résolution actuelle et de votre fuseau horaire uniquement.</p>
     </div>
   );
 };

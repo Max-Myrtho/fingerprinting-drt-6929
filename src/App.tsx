@@ -1,7 +1,7 @@
 import './App.css'
 import Home from './Home'
-import CustomFingerprint from './CustomFingerprint'
 import FingerprintDetails from './FingerprintDetails'
+import Ressources from './Ressources'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Home/>
       <FingerprintDetails />
-      <CustomFingerprint />
+      <Ressources />
     </>
   )
 }

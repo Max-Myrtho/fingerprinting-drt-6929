@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {UAParser} from "ua-parser-js";
 
 const LiElement = ({title = "", value = ""}) => {
@@ -17,6 +18,22 @@ const LiElement = ({title = "", value = ""}) => {
 </li>);
 }
 const FingerprintDetails = () => {
+    const [resolution, setResolution] = useState<string>(`${window.innerWidth}x${window.innerHeight}`);
+  
+    useEffect(() => {
+      const updateFingerprint = () => {
+        setResolution(`${window.innerWidth}x${window.innerHeight}`);
+      };
+  
+      updateFingerprint()
+  
+      window.addEventListener("resize", updateFingerprint);
+  
+      return () => {
+        window.removeEventListener("resize", updateFingerprint);
+      };
+    }, [resolution]);
+
   const uap = new UAParser();
 
   return (
@@ -30,7 +47,7 @@ const FingerprintDetails = () => {
         wordBreak: 'break-word'
        }}>
         <LiElement title='Navigateur' value={`${uap.getResult().browser.name} | Version: ${uap.getResult().browser.version}`}/>
-        <LiElement title='Résolution écran' value={`X: ${window.innerWidth}px | Y: ${window.innerHeight}px`}/>
+        <LiElement title='Résolution écran' value={resolution}/>
         <LiElement title="Système d'exploitation" value={navigator.platform}/>
         <LiElement title='Mémoire RAM' value={`${navigator.hardwareConcurrency} GB`}/>
         <LiElement title='Fuseau horaire' value={Intl.DateTimeFormat().resolvedOptions().timeZone}/>
