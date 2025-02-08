@@ -2,6 +2,10 @@
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](./LICENSE) pour plus de détails.
 
+## Live Demo
+
+link: https://fingerprinting.maxmyrtho.me/
+
 ## Requirements
 
 - Node.js **22.11.0** or higher
