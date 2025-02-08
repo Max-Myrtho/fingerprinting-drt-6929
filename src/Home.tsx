@@ -24,7 +24,7 @@ const Home = () => {
           >
             GitHub
           </a>{" "}
-          sous licence MIT. L'image a été généré sur{" "}
+          sous licence MIT. L'image a été générée sur{" "}
           <a
             target="_blank"
             href="https://images.deepai.org/art-image/9332fc2b171346b7bc377cb47a6044ec/digital-fingerprint-on-device-and-cookie-fcc0b2.jpg"
