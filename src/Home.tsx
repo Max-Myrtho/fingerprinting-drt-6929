@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <>
       <div className="p-[2rem] mb-4">
-        <h2 className="text-center text-4xl mb-4 underline">
+        <h2 className="text-center text-4xl mb-4 underline font-bold">
           Démonstration du Fingerprinting (DRT-6929E)
         </h2>
         <img
