@@ -10,11 +10,21 @@ const Home = () => {
           src="/hIsOZdCd.jpeg"
           alt="fingerprint on a phone and a cookie"
         />
-        {/* <p>Ce site accompagne le texte <a href="#" target="_blank">Le fingerprinting : une arme à double tranchant pour la vie privée.</a> en proposant une présentation pratique du fingerprinting. */}
+        {/* <p>Ce site accompagne le texte Le fingerprinting : une arme à double tranchant pour la vie privée.</a> en proposant une présentation pratique du fingerprinting. */}
         <p className="mb-3">
           Ce site propose une présentation pratique du fingerprinting et
-          accompagne un texte de blog. Il a été réalisé dans le cadre du cours
-          DRT-6929E à l'Université de Montréal.
+          accompagne le billet de blog "
+          <i>
+            <a
+              href="https://www.gautrais.com/blogue/2025/02/09/le-fingerprinting-une-arme-a-double-tranchant-pour-la-vie-privee/"
+              target="_blank"
+              className="underline"
+            >
+              Le fingerprinting : une arme à double tranchant pour la vie privée
+            </a>
+          </i>
+          " . Il a été réalisé dans le cadre du cours DRT-6929E à l'Université
+          de Montréal.
           <br />
           <u>Aucune information personnelle n'est enregistrée.</u> Ce projet est
           en libre accès et disponible sur{" "}
