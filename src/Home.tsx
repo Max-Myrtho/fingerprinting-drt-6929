@@ -48,6 +48,8 @@ const Home = () => {
           Max-Myrtho Saint-Louis
         </a>{" "}
         -
+        <br />
+        <i>2 février 2025</i>
         <hr className="mt-3" />
       </div>
     </>
